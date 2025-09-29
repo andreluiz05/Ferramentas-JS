@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Sricpt</title>
+</head>
+<body>
+    <h1 id="titulo">Problemas e Soluções Digitais</h1>
+    <style>
+    #titulo {font-family:arial; text-align: center;}
+    #subtitulo {text-align: center; font-family: monospace;}
+    </style>
+    <p id="subtitulo">Resoluções e Respostas!</p>
+    <hr>
+    <!-- questao1 -->
+    <label for="botaoteste" style="font-family:cursive;">Clique no botão e seja feliz! &#x1F604:</label>
+    <input type="button" id="botaoteste" value="Clique aqui" onclick="mostrarAlerta()">
+    <br>
+    <!-- questao2 -->
+    <h3 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Cálculo para área do triângulo</h3>
+<form action="">
+    <label for="base1">Insira o valor da base do triângulo</label>
+    <input type="text" name= "" id="base1" >
+
+    <label for="altura2">Insira o valor da altura</label>    
+    <input type="text" name= "" id="altura2">
+
+    <input type="reset" value="Limpar">
+    <p id="resultadofinal" style="font-size: 120% ;">A área do triângulo é:</p>
+    <p></p>
+</form><br>
+<button onclick="Calcular()">Calcular</button> 
+<!-- questao3 -->
+<h3>Verdadeiro ou Falso?!</h3>
+<form action="">
+    <label for="num1">Insira qualquer número!</label>
+    <input type="text" name= "" id="num1" >
+
+    <input type="reset" value="Limpar">
+
+    <p id="resposta" style="font-size: 120% ;">Resultado</p>
+    <p></p>
+</form><br>
+<button onclick="CalculoVouF()">Clique aqui!</button>
+<br>
+<br>
+<!-- questao4 -->
+<form action="">
+<h3>Descubra o maior número!</h3>
+
+<label for="num1">Número 1:</label>
+<input type="text" id="num1top">
+
+<label for="num2">Número 2:</label>
+<input type="text" id="num2top">
+
+<label for="num3">Número 3:</label>
+<input type="text" id="num3top">
+</form>
+
+<br><br>
+<button onclick="maiorNumero()">Descobrir!</button>
+
+<p id="resultado" style="font-size: 120%;">O valor maior é:</p>
+<br>
+<!-- questao5 -->
+<form action="">
+<h3>Conversor de Temperatura(Celsius para Fahrenheit)</h3>
+
+  <label for="celsius">Digite a temperatura em °C:</label>
+  <input type="number" id="celsius">
+
+  <br><br>
+  <button type="button" onclick="converter()">Converter</button>
+
+  <p id="resultadotemp" style="font-size:120%;">A temperatura atual Fahrenheit é:</p>
+</form>
+<!-- questao6 -->
+<h3>Calculadora de Retorno de Investimento</h3>
+  <form>
+    <label for="capital">Capital inicial (R$):</label>
+    <input type="number" id="capital" step="0.01">
+    <br><br>
+    <label for="juros">Taxa de juros mensal (%):</label>
+    <input type="number" id="juros" step="0.01">
+    <br><br>
+    <label for="tempo">Tempo (meses):</label>
+    <input type="number" id="tempo">
+    <br><br>
+    <button type="button" onclick="calcularMontante()">Calcular</button>
+  <p id="resultadomontante" style="font-size: 120%;">O montante final em R$ será:</p>
+</form>
+  <!-- questao7 -->
+  <h3>O número é divisível por 3?</h3>
+<form>
+  <label for="numdiv3">Digite um número inteiro:</label>
+  <input type="text" id="numdiv3">
+
+  <input type="reset" value="Limpar">
+  <p id="respostadiv3" style="font-size: 120%;">Resultado:</p>
+</form>
+<br>
+<button onclick="verificarDiv3()">Verificar</button>
+<br>
+<!-- questao8 -->
+<h3>Descubra o mês!</h3>
+<form>
+  <label for="numMes">Digite um número de 1 a 12:</label>
+  <input type="number" id="numMes" min="1" max="12">
+
+  <input type="reset" value="Limpar">
+  <p id="resultadoMes" style="font-size: 120%;">O mês correspondente é:</p>
+</form>
+<br>
+<button onclick="mostrarMes()">Verificar</button>
+<!-- questao9 -->
+<h3>Reajuste Salarial - Organização Tabajara</h3>
+<form>
+  <label for="salarioColab">Digite o salário atual (R$):</label>
+  <input type="number" id="salarioColab" step="0.01">
+
+  <br><br>
+  <button type="button" onclick="calcularReajusteColab()">Calcular Reajuste</button>
+
+  <p id="resultadoReajusteColab" style="font-size:120%;">
+    O resultado aparecerá aqui.
+  </p>
+</form>
+<!-- questao10 -->
+<h3>Cálculo de combustível </h3>
+<form>
+  <label for="valorDinheiro">Digite quanto de dinheiro você tem (R$):</label>
+  <input type="number" id="valorDinheiro" step="0.01">
+
+  <br><br>
+  <button type="button" onclick="calcularCombustivel()">Calcular</button>
+
+  <p id="resultadoCombustivel" style="font-size:120%;">
+    O resultado aparecerá aqui.
+  </p>
+</form>
+<!-- questao11 -->
+<h3>Conversão de Minutos para Horas e Dias</h3>
+<form>
+  <label for="minutos">Digite a quantidade de minutos:</label>
+  <input type="number" id="minutos">
+
+  <br><br>
+  <button type="button" onclick="converterMinutos()">Converter</button>
+
+  <p id="resultadoMinutos" style="font-size:120%;">
+    O resultado aparecerá aqui.
+  </p>
+</form>
+<!-- questao12 -->
+<h3>Calculadora de Gorjeta</h3>
+<form>
+  <label for="valorRefeicao">Digite o valor da refeição (R$):</label>
+  <input type="number" id="valorRefeicao" step="0.01">
+
+  <br><br>
+  <button type="button" onclick="calcularGorjeta()">Calcular</button>
+
+  <p id="resultadoGorjeta" style="font-size:120%;">
+    O resultado aparecerá aqui.
+  </p>
+</form>
+<!-- questao13 -->
+<h3>Empréstimo bancário</h3>
+<form>
+  <label for="salario">Digite o salário (R$):</label>
+  <input type="number" id="salario" step="0.01">
+
+  <br><br>
+  <label for="prestacao">Digite o valor da prestação (R$):</label>
+  <input type="number" id="prestacao" step="0.01">
+
+  <br><br>
+  <button type="button" onclick="verificarEmprestimo()">Verificar</button>
+
+  <p id="resultadoEmprestimo" style="font-size:120%;">
+    O resultado aparecerá aqui.
+  </p>
+</form>
+<!-- questao14 -->
+<h3>Calculadora de desconto previdenciário</h3>
+<form>
+  <label for="salarioFunc">Digite o salário do funcionário (R$):</label>
+  <input type="number" id="salarioFunc" step="0.01">
+
+  <br><br>
+  <button type="button" onclick="calcularDesconto()">Calcular</button>
+
+  <p id="resultadoDesconto" style="font-size:120%;">
+    O resultado aparecerá aqui.
+  </p>
+</form>
+<!-- questao15 -->
+<h3>Rendimento da caixinha(JUROS FIXOS)</h3>
+<form>
+  <label for="deposito">Digite o valor do depósito (R$):</label>
+  <input type="number" id="deposito" step="0.01">
+
+  <br><br>
+  <button type="button" onclick="calcularRendimento()">Calcular</button>
+
+  <p id="resultadoRendimento" style="font-size:120%;">
+    O resultado aparecerá aqui.
+  </p>
+</form>
+
+<script src="./script.js"></script>
+</body>
+</html -->
