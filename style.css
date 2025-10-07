@@ -4,6 +4,19 @@
     box-sizing: border-box;
   }
   
+  #fotoinicial {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    width: 300px; 
+    height: 200px;
+    border-radius: 60px;
+  }
+
+  #ptitulo {
+    text-align: center;
+  }
+  
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aec0f0a8;
@@ -18,7 +31,7 @@
     margin-bottom: 5px;
   }
   
-  p#subtitulo {
+    #subtitulo {
     text-align: center;
     color: #666;
     margin-bottom: 20px;
@@ -84,5 +97,20 @@
     margin-top: 10px;
     font-weight: bold;
     color: #2c3e50;
+  }
+  
+  footer {
+    background-color: #052bd3;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 -2px 5px rgba(23, 23, 24, 0.808);
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    color: #000000;
   }
   
