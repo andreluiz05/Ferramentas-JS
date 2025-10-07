@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Sricpt</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>~Ferramentas no Web~</title>
 </head>
 <body>
     <h1 id="titulo">Problemas e Soluções Digitais</h1>
-    <style>
-    #titulo {font-family:arial; text-align: center;}
-    #subtitulo {text-align: center; font-family: monospace;}
-    </style>
     <p id="subtitulo">Resoluções e Respostas!</p>
     <hr>
     <!-- questao1 -->
@@ -19,7 +16,7 @@
     <input type="button" id="botaoteste" value="Clique aqui" onclick="mostrarAlerta()">
     <br>
     <!-- questao2 -->
-    <h3 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Cálculo para área do triângulo</h3>
+    <h3>Cálculo para área do triângulo</h3>
 <form action="">
     <label for="base1">Insira o valor da base do triângulo</label>
     <input type="text" name= "" id="base1" >
@@ -28,7 +25,7 @@
     <input type="text" name= "" id="altura2">
 
     <input type="reset" value="Limpar">
-    <p id="resultadofinal" style="font-size: 120% ;">A área do triângulo é:</p>
+    <p id="resultadofinal">A área do triângulo é:</p>
     <p></p>
 </form><br>
 <button onclick="Calcular()">Calcular</button> 
@@ -40,7 +37,7 @@
 
     <input type="reset" value="Limpar">
 
-    <p id="resposta" style="font-size: 120% ;">Resultado</p>
+    <p id="resposta">Resultado</p>
     <p></p>
 </form><br>
 <button onclick="CalculoVouF()">Clique aqui!</button>
@@ -63,7 +60,7 @@
 <br><br>
 <button onclick="maiorNumero()">Descobrir!</button>
 
-<p id="resultado" style="font-size: 120%;">O valor maior é:</p>
+<p id="resultado">O valor maior é:</p>
 <br>
 <!-- questao5 -->
 <form action="">
@@ -75,7 +72,7 @@
   <br><br>
   <button type="button" onclick="converter()">Converter</button>
 
-  <p id="resultadotemp" style="font-size:120%;">A temperatura atual Fahrenheit é:</p>
+  <p id="resultadotemp">A temperatura atual Fahrenheit é:</p>
 </form>
 <!-- questao6 -->
 <h3>Calculadora de Retorno de Investimento</h3>
@@ -90,7 +87,7 @@
     <input type="number" id="tempo">
     <br><br>
     <button type="button" onclick="calcularMontante()">Calcular</button>
-  <p id="resultadomontante" style="font-size: 120%;">O montante final em R$ será:</p>
+  <p id="resultadomontante">O montante final em R$ será:</p>
 </form>
   <!-- questao7 -->
   <h3>O número é divisível por 3?</h3>
@@ -99,7 +96,7 @@
   <input type="text" id="numdiv3">
 
   <input type="reset" value="Limpar">
-  <p id="respostadiv3" style="font-size: 120%;">Resultado:</p>
+  <p id="respostadiv3">Resultado:</p>
 </form>
 <br>
 <button onclick="verificarDiv3()">Verificar</button>
@@ -111,7 +108,7 @@
   <input type="number" id="numMes" min="1" max="12">
 
   <input type="reset" value="Limpar">
-  <p id="resultadoMes" style="font-size: 120%;">O mês correspondente é:</p>
+  <p id="resultadoMes">O mês correspondente é:</p>
 </form>
 <br>
 <button onclick="mostrarMes()">Verificar</button>
@@ -137,7 +134,7 @@
   <br><br>
   <button type="button" onclick="calcularCombustivel()">Calcular</button>
 
-  <p id="resultadoCombustivel" style="font-size:120%;">
+  <p id="resultadoCombustivel">
     O resultado aparecerá aqui.
   </p>
 </form>
@@ -150,7 +147,7 @@
   <br><br>
   <button type="button" onclick="converterMinutos()">Converter</button>
 
-  <p id="resultadoMinutos" style="font-size:120%;">
+  <p id="resultadoMinutos">
     O resultado aparecerá aqui.
   </p>
 </form>
@@ -163,7 +160,7 @@
   <br><br>
   <button type="button" onclick="calcularGorjeta()">Calcular</button>
 
-  <p id="resultadoGorjeta" style="font-size:120%;">
+  <p id="resultadoGorjeta">
     O resultado aparecerá aqui.
   </p>
 </form>
@@ -180,7 +177,7 @@
   <br><br>
   <button type="button" onclick="verificarEmprestimo()">Verificar</button>
 
-  <p id="resultadoEmprestimo" style="font-size:120%;">
+  <p id="resultadoEmprestimo">
     O resultado aparecerá aqui.
   </p>
 </form>
@@ -193,7 +190,7 @@
   <br><br>
   <button type="button" onclick="calcularDesconto()">Calcular</button>
 
-  <p id="resultadoDesconto" style="font-size:120%;">
+  <p id="resultadoDesconto">
     O resultado aparecerá aqui.
   </p>
 </form>
@@ -206,7 +203,7 @@
   <br><br>
   <button type="button" onclick="calcularRendimento()">Calcular</button>
 
-  <p id="resultadoRendimento" style="font-size:120%;">
+  <p id="resultadoRendimento">
     O resultado aparecerá aqui.
   </p>
 </form>
